@@ -23,7 +23,7 @@ router.post('/register', (req, res) => {
   const sql = 'INSERT INTO users (email, password, user_type) VALUES (?, ?, ?)';
   db.run(sql, [email, hashedPassword, user_type], function (err) {
     if (err) {
-      return res.status(500).json({ message: 'Erreur lors de l'inscription.', error: err.message });
+      return res.status(500).json({ message: "Erreur lors de l'inscription.", error: err.message });
     }
 
     // Générer un token JWT
