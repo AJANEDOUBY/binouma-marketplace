@@ -13,7 +13,7 @@ router.post('/register', (req, res) => {
   const { email, password, user_type } = req.body;
 
   if (!email || !password || !user_type) {
-    return res.status(400).json({ message: 'Veuillez fournir email, mot de passe et type d'utilisateur.' });
+    return res.status(400).json({ message: "Veuillez fournir email, mot de passe et type d'utilisateur." });
   }
 
   // Hachage du mot de passe
