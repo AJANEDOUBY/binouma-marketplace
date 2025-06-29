@@ -31,6 +31,7 @@ function App() {
             <Route path="/prestataire-dashboard" element={<PrestataireDashboard />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/service/:id" element={<ServiceDetail />} />
+            <Route path="/create-service" element={<CreateService />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

@@ -61,6 +61,23 @@ router.get('/:id', (req, res) => {
   });
 });
 
+// Récupérer les services créés par l'utilisateur connecté (client)
+router.get('/my-services', authMiddleware, (req, res) => {
+  const client_id = req.user.id;
+
+  if (req.user.user_type !== 'client') {
+    return res.status(403).json({ message: 'Accès refusé. Seuls les clients peuvent voir leurs services.' });
+  }
+
+  const sql = 'SELECT * FROM services WHERE client_id = ?';
+  db.all(sql, [client_id], (err, rows) => {
+    if (err) {
+      return res.status(500).json({ message: 'Erreur lors de la récupération de vos services.', error: err.message });
+    }
+    res.json(rows);
+  });
+});
+
 // Mettre à jour une annonce de service (protégé)
 router.put('/:id', authMiddleware, (req, res) => {
   const { title, description, category, budget, status } = req.body;
