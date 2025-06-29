@@ -46,11 +46,11 @@ const Navbar = () => {
       {/* Section des catégories (à affiner avec de vraies catégories) */}
       <div className="bg-light py-2 d-none d-lg-block">
         <div className="container d-flex justify-content-around">
-          <a href="#" className="text-dark text-decoration-none">Ménage</a>
-          <a href="#" className="text-dark text-decoration-none">Bricolage</a>
-          <a href="#" className="text-dark text-decoration-none">Jardinage</a>
-          <a href="#" className="text-dark text-decoration-none">Cours</a>
-          <a href="#" className="text-dark text-decoration-none">Informatique</a>
+          <a href="#" className="text-dark text-decoration-none"><i class="bi bi-house me-1"></i>Ménage</a>
+          <a href="#" className="text-dark text-decoration-none"><i class="bi bi-tools me-1"></i>Bricolage</a>
+          <a href="#" className="text-dark text-decoration-none"><i class="bi bi-flower1 me-1"></i>Jardinage</a>
+          <a href="#" className="text-dark text-decoration-none"><i class="bi bi-book me-1"></i>Cours</a>
+          <a href="#" className="text-dark text-decoration-none"><i class="bi bi-laptop me-1"></i>Informatique</a>
         </div>
       </div>
     </nav>
