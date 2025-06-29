@@ -5,6 +5,8 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
+const API_URL = 'https://binouma-marketplace.onrender.com/api'; // Nouvelle URL du backend
+
 export const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({ token: null, isAuthenticated: false, user: null });
 

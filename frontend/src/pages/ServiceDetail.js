@@ -30,7 +30,7 @@ const ServiceDetail = () => {
 
   const handleApply = async () => {
     try {
-      await axios.post('http://localhost:5000/api/applications', { service_id: id }, {
+      await axios.post('https://binouma-marketplace.onrender.com/api/applications', { service_id: id }, {
         headers: { 'x-auth-token': auth.token }
       });
       alert('Candidature envoyée !');

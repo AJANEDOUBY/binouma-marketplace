@@ -35,7 +35,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put('http://localhost:5000/api/users/profile', profile, {
+      await axios.put('https://binouma-marketplace.onrender.com/api/users/profile', profile, {
         headers: { 'x-auth-token': auth.token }
       });
       alert('Profil mis à jour !');
