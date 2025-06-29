@@ -15,6 +15,7 @@ import Profile from './pages/Profile';
 import ServiceDetail from './pages/ServiceDetail';
 import CreateService from './pages/CreateService';
 import NotFound from './pages/NotFound';
+import CreateService from './pages/CreateService'; // Assurez-vous que cette ligne est présente
 
 // Composants
 import Navbar from './components/Navbar';
