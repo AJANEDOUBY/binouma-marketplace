@@ -1,0 +1,48 @@
+/* Fichier: frontend/src/App.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Gris très clair */
+}
+
+.navbar {
+  background-color: #007bff !important; /* Bleu primaire */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+main {
+  margin-top: 100px; /* Ajuster en fonction de la hauteur de la navbar */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bleu primaire */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Bleu plus foncé au survol */
+  border-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745; /* Vert pour les actions secondaires */
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Vert plus foncé au survol */
+  border-color: #218838;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.footer {
+  background-color: #343a40; /* Gris foncé */
+  color: white;
+}
